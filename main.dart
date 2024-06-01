@@ -54,14 +54,14 @@ void main () {
   // Write Program to convert celcius to farenheit
   double celcius = 37;
   double franhite;
-  franhite = (celcuis*1.8)+32;
+  franhite = (celcius*1.8)+32;
   print("franhite is $franhite");
 
   // Write Program to convert farenheit to celcius
-  double celcius;
-  double franhite = 98.6;
-  celcius = (franhite-32)*5/9;
-  print("celcius is $celcius");
+  double celcuis;
+  double franite = 98.6;
+  celcuis = (franite-32)*5/9;
+  print("celcius is $celcuis");
 
 // Write Program to convert days to years, weeks and days
   int years = 10;
@@ -72,3 +72,4 @@ void main () {
   print("years : $years");
   print("weeks : $weeks");
   print("days : $days");
+}
