@@ -6,10 +6,10 @@
     
         "configurations": [
             {
-                "name": "Flutter (lecture 10-11-12.dart)",
+                "name": "Flutter (main.dart)",
                 "type": "dart",
                 "request": "launch",
-                "program": "lecture 10-11-12.dart"
+                "program": "main.dart"
             }
         ]
         
