@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:core';
-void main () {
+void main (){
  //Write Program to perform all airthmetic operations
   print("Program to perform all airthmetic operations");
   int numberOne; // declaring 
@@ -275,9 +275,9 @@ while ( randnum <5){
   randnum ++;
 }
 
-// lecture 21 dart list tutorial 
-// array concept
-// start from 0 - n numbers
+// // lecture 21 dart list tutorial 
+// // array concept
+// // start from 0 - n numbers
 
 List <String> names = ['ikram', 'bhatti', 'afnan'];
 List <int>   agee = [ 13 , 14 ,15  ];
@@ -292,10 +292,91 @@ for (int i = 0 ; i< names.length ;i++){
 }
 agee.reversed;
 print(agee.reversed.toList());
+ 
+
+
+
+
+
 
 }
 
 
+// lecture 22 funtions 
+void sum (){
+  int a = 12;
+  int b = 14;
+  int result = a + b;
+  print (result);
+}
+void addition (int a , int b ){ // parameters 
+  int result = a + b;
+  print(result);}
+
+   
+//  // return type function
+
+int substraction(int a , int b){
+int result = a-b;
+return result;
+}
+
+
+// finding maximum number from a list using in a function
+
+
+int findingMaxNumber() {
+  List<int> numbers = [];
+  print('How many numbers you will add in a list');
+  int x = int.parse(stdin.readLineSync()!);
+  for (int i = 0; i < x; i++) {
+    print('Enter ${i + 1} number ');
+    int number = int.parse(stdin.readLineSync()!);
+    numbers.add(number);
+  }
+  int max = numbers[0];
+  for (int y = 1; y < numbers.length; y++) {
+    if (max < numbers[y]) {
+      max = numbers[y];
+    }
+  }
+  print("Your maximum number is $max");
+  return max;
+
+  // lecture 23 dart function async
+
+ 
+  
+}
+
+void test () async{
+await Future.delayed(Duration(seconds: 3));
+print("Ikram bhatti");
+}
+
+Future <int> test1 () async{ // 
+await Future.delayed(Duration(seconds: 3));
+return Future.value(9) ;
+
+}
+
+// lecture 24 dart switch statement // case of otherwise
+void switchstat (){
+  int x = 30;
+  int y = 40;
+  var operations = '+';
+  switch (operations) {
+    case '-':
+    print(x - y);
+    case '+':
+    print(x + y);
+  }
+}
+// lecture 25 dart mapping
+void mapping (){
+  Map <String , dynamic > map = {"name" : "asif taj", "age": 10, 'real value' : 23.4};
+  print(map["name"]);
+}
 
 
 
